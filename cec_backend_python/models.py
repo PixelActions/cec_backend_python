@@ -9,7 +9,7 @@ class Entity(object):
 
 class Generator(object):
     def __init__(self, id, created_on, name='', **kwargs):
-        self.id = cid
+        self.id = id
         self.created_on = created_on
         self.name=name
     def __unicode__(self):

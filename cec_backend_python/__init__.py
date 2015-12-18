@@ -152,6 +152,10 @@ class CEC(object):
 
     def __init__(self, username,password,
                  timeout=DEFAULT_TIMEOUT, api_base_url=API_BASE_URL):
+        if api_base_url:
+            if api_base_url[-1] != "/":
+                    api_base_url += "/"
+            api_base_url = api_base_url + "{api}"
         self.entities = Entities(username=username, password=password, timeout=timeout, api_base_url=api_base_url)
         self.generators = Generators(username=username, password=password, timeout=timeout, api_base_url=api_base_url)
         self.tests = Tests(username=username, password=password, timeout=timeout, api_base_url=api_base_url)
