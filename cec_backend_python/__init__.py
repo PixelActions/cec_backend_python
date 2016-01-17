@@ -32,7 +32,7 @@ class Response(object):
         self.raw = body
         self.body = json.loads(body)
 
-        if status_code == requests.codes.ok:
+        if status_code == requests.codes.ok or status_code==requests.codes.created:
             self.successful = True
         else:
             self.successful = False
