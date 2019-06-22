@@ -18,7 +18,7 @@ import requests
 from .models import Entity, Generator, Test
 
 API_BASE_URL = 'https://backend.cec.com.cy/{api}'
-DEFAULT_TIMEOUT = 10
+DEFAULT_TIMEOUT = 40
 
 
 __all__ = ['Error', 'Response', 'BaseAPI', 'Entities', 'Generators','Tests', 'CEC']

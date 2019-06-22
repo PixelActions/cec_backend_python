@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='cec_backend_python',
-    version='0.0.1',
+    version='0.0.2',
     packages=['cec_backend_python'],
     description='CEC Backend Python API client',
     author='Kyriakos Toumbas',
